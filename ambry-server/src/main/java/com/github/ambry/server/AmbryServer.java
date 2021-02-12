@@ -214,7 +214,7 @@ public class AmbryServer {
       DataNodeId nodeId = clusterMap.getDataNodeId(networkConfig.hostName, networkConfig.port);
       if (nodeId == null) {
         throw new IllegalArgumentException("The node " + networkConfig.hostName + ":" + networkConfig.port
-            + "is not present in the clustermap. Failing to start the datanode");
+            + " is not present in the clustermap. Failing to start the datanode");
       }
 
       AccountServiceFactory accountServiceFactory =
